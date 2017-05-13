@@ -1,0 +1,159 @@
+*
+{
+    margin: 0;
+    padding: 0px;
+    font-family: helvetica;
+}
+
+.banner
+{
+    width: 100%;
+    background-image: url(../pictures/banner_.jpg);
+    background-attachment: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header
+{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    -webkit-transition: background-color .5s;
+}
+
+nav
+{
+    display: table;
+    margin: auto;
+    margin-top:  15px;
+    height: 40px;
+    -webkit-transition: margin-left.5s;
+}
+
+ul
+{
+    display: block;
+    float: left;
+    list-style: none;
+}
+
+.logo
+{
+    float: left;
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 150px;
+    -webkit-transition: margin-left.5s, height .5s, margin-right.5s, margin-top .5s;
+
+}
+
+ul li
+{
+    float: left;
+    margin: 10px;
+}
+
+ul a
+{
+    color: rgb(211, 217, 217);
+    text-decoration: none;
+}
+
+.body
+{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(121, 113, 81);
+}
+
+/****************************************FORMULARIOS de PHP********************************************************************/
+html
+{
+    font-size: 16px;
+    font-family: 'BioRhyme', serif;
+}
+
+body
+{
+    background-color: #F4F4F9;
+
+}
+.container-formulario
+{
+    max-width: 450px;
+    height: auto;
+    background-color: #586F7C;
+    margin: 5% auto;
+    padding-bottom: 1rem;
+}
+
+.form_top
+{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-top: solid .4rem #B8DBD9;
+    margin-bottom: 1rem;
+}
+.form_top h2
+{
+    font-weight: bold;
+    color: #F4F4F9;
+    font-size: 25px;
+}
+h2 span
+{
+    color: #28ed89;
+}
+.from_reg
+{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lblInput
+{
+    margin: .5rem 7rem .5rem;
+    border: none;
+    transition: all .5s;
+    justify-content: space-around;
+}
+.btnForm
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.input, .btn_submit
+{
+    background-color: #F4F4F9;
+    padding: .5rem 2rem;
+    margin: .5rem 7rem .5rem;
+    border: none;
+    border-bottom: solid  #B8DBD9 .2rem;
+    transition: all .5s;
+    justify-content: space-around;
+}
+.inpt:focus
+{
+    border-top: #000000 .2rem;
+}
+
+.btn_submit
+{
+    width: 40%;
+    border-bottom: none;
+    background-color: #2F4550;
+    color: white;
+}
+.btn_submit:hover
+{
+    background-color: #000000;
+}
