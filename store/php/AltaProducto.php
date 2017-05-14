@@ -15,6 +15,8 @@
             <div class="form_top">
                 <h2>Registro <span>Producto</span></h2>
             </div>
+
+            <input class="btn_submit" type="submit" href="AltaProducto.php">Regrasar al menú<input/>
             <form class="form_reg" action="GrabarProducto.php" method="post">
                 <?php
                     $valores = "SELECT COUNT(*) from products";
