@@ -11,12 +11,13 @@
         <title>Producto</title>
     </head>
     <body >
+        <a href="../index.html" class="btn_submit">Salir</a>
+        <input class="btn_submit" type="submit" value="Regresar a la página principal"  onClick=" window.location.href='store/index.html' ">
         <div class="container-formulario">
             <div class="form_top">
                 <h2>Registro <span>Producto</span></h2>
             </div>
 
-            <input class="btn_submit" type="submit" href="AltaProducto.php">Regrasar al menú<input/>
             <form class="form_reg" action="GrabarProducto.php" method="post">
                 <?php
                     $valores = "SELECT COUNT(*) from products";
@@ -45,9 +46,14 @@
                 <label class="lblInput">Descripcion</label>
                 <input class="input" type="text" name = "descripcion" placeholder="&#128213;descripcion producto">
                 <label class="lblInput">Imagen</label>
-                <input type="file" name = "buscarImagen" value="file1"/>
+                <div class="searchImage">
+                    <p id="texto">Add file</p>
+                    <input type="file" name = "buscarImagen" class="buscarImagen" value="file1"/>
+                </div>
+                <a href="MenuDeAltas.php" class="btn_submit">Regresar al menú</a>
                 <div class="btnForm">
                     <input class="btn_submit" type="submit" value="Registro del producto">
+
                 </div>
             </form>
         </div>
