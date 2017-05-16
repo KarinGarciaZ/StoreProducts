@@ -11,8 +11,10 @@
         <title>Producto</title>
     </head>
     <body >
+        <a href="MenuDeAltas.php" class="btn_submit">Regresar al menú</a><br><br><br>
+        <a href="LogIn.php" class="btn_submit">Cerrar sesión</a><br><br><br>
         <a href="../index.html" class="btn_submit">Salir</a>
-        <input class="btn_submit" type="submit" value="Regresar a la página principal"  onClick=" window.location.href='store/index.html' ">
+        <!--input class="btn_submit" type="submit" value="Regresar a la página principal"  onClick=" window.location.href='store/index.html' "!-->
         <div class="container-formulario">
             <div class="form_top">
                 <h2>Registro <span>Producto</span></h2>
@@ -39,18 +41,29 @@
                         }
                      ?>
                 </select>
+                <label class="lblInput">Marca</label>
+                <select class= "btn_submit" name="marca">
+                    <?php
+                        $valores = "SELECT * from brands";
+                        $lector = mysql_query($valores);
+                        while ($row = mysql_fetch_array($lector)) {
+                            echo "<option value= '".$row['id_Brand']."'>";
+                            echo $row['name'];
+                            echo "</option>";
+                        }
+                     ?>
+                </select>
                 <label class="lblInput">Nombre</label>
-                <input class="input" type="text" name = "nombre" placeholder="&#128213;nombre producto" >
+                <input class="input" type="text" name = "nombre" placeholder="&#128213;nombre producto " style="text-transform:uppercase" required autofocus>
                 <label class="lblInput">Precio</label>
-                <input class="input" type="text" name = "precio" placeholder="&#128213;precio producto" >
+                <input class="input" type="text" name = "precio" placeholder="&#128213;precio producto" style="text-transform:uppercase" required autofocus>
                 <label class="lblInput">Descripcion</label>
-                <input class="input" type="text" name = "descripcion" placeholder="&#128213;descripcion producto">
+                <input class="input" type="text" name = "descripcion" placeholder="&#128213;descripcion producto" style="text-transform:uppercase" required autofocus>
                 <label class="lblInput">Imagen</label>
                 <div class="searchImage">
                     <p id="texto">Add file</p>
-                    <input type="file" name = "buscarImagen" class="buscarImagen" value="file1"/>
+                    <input type="file" name = "buscarImagen" class="buscarImagen" value="file1"/ required autofocus>
                 </div>
-                <a href="MenuDeAltas.php" class="btn_submit">Regresar al menú</a>
                 <div class="btnForm">
                     <input class="btn_submit" type="submit" value="Registro del producto">
 

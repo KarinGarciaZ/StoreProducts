@@ -22,7 +22,7 @@
                 //header('Location: LogIn.php');
             echo '}';
             echo '</script>';
-            //header('Location: LogIn.php');
+            header('Location: LogIn.php');
         }
 
          ?>

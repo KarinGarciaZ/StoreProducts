@@ -2,7 +2,7 @@
     $conection = mysql_connect("localhost", "root");
     mysql_select_db("dbostoreproducts", $conection);
     $IDC = $_POST['categoria'];
-    $IDM = 2;
+    $IDM = $_POST['marca'];
     $nom = $_POST['nombre'];
     $precio = $_POST['precio'];
     $descripcion = $_POST['descripcion'];
