@@ -193,3 +193,54 @@ p#texto:hover
 {
     color: rgb(11, 126, 112);
 }
+/*************************************************CSS para la barra el menú de altas**************************/
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+#laterial
+{
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    background-color: rgb(48, 48, 48);
+}
+.ul_Menu
+{
+    margin-top: 100px;
+    list-style: none;
+    display: block;
+}
+.li_Menu
+{
+    width: 95%;
+    height: 50px;
+/*    border-bottom: 1px solid rgb(255, 255, 255);*/
+    overflow: hidden;
+}
+p.menu
+{
+    position: relative;
+    padding: 5px;
+    padding-right: 25px;
+    float: right;
+    color:white;
+    opacity: .6;
+    font-size: 1.5em;
+    -webkit-transition: color .2s;
+}
+div.barra
+{
+    position: absolute;
+    height: 50px;
+    width: 0px;
+    background-color: rgb(40, 128, 185);
+    opacity: .2;
+    -webkit-transition: width .2s;
+}
+
+.li_Menu:hover div.barra
+{
+    width: 220px;
+}
