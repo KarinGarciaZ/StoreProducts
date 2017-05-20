@@ -13,7 +13,7 @@
         $row = mysql_fetch_array($valores);
         $contra = $row[0];
         if ($contra == $pass) {
-            header('Location: MenuDeAltas.php');
+            header('Location: MenuDeAltas.html');
         }
         else {
             //echo '<href="LogIn.php" onclick="return confirm("Are you sure?");"/>';

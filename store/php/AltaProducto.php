@@ -11,7 +11,7 @@
         <title>Producto</title>
     </head>
     <body >
-        <a href="MenuDeAltas.php" class="btn_submit">Regresar al menú</a><br><br><br>
+        <a href="MenuDeAltas.html" class="btn_submit">Regresar al menú</a><br><br><br>
         <a href="LogIn.php" class="btn_submit">Cerrar sesión</a><br><br><br>
         <a href="../index.html" class="btn_submit">Salir</a>
         <!--input class="btn_submit" type="submit" value="Regresar a la página principal"  onClick=" window.location.href='store/index.html' "!-->
