@@ -31,8 +31,13 @@
                 }
              ?>
         </div>
-        <footer>
-            <h1>MATOCAS</h1>
+        <footer class="pie">
+            <div class="pie-contenedor">
+                <h2>CONTACTANOS EN NUESTRAS REDES SOCIALES</h2>
+            </div>
+
+
+
         </footer>
     </body>
 </html>

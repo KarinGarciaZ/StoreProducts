@@ -229,20 +229,34 @@ p#texto:hover
 }
 
 .contenedor{
-    background: rgb(177, 205, 235);
+    background: rgb(142, 149, 156);
+    border-style: none;
     overflow: auto;
+    border-radius: 10px;
     /*width: 84%;
     overflow-y: auto;
     margin-top: 4%;
     margin-left: 14%;*/
     margin: 4% 14% 14% 2%;
     /*margin-top: 20px;*/
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     /*max-width: 450px;
     height: auto;
     background-color: #586F7C;
     margin: 5% auto;
     padding-bottom: 1rem;*/
+}
+
+.pie h2
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.pie
+{
+    background-color:  rgb(10, 10, 10);
+    height: 20%;
+    width: 100%;
 }
 /*************************************************CSS para la barra el menú de altas**************************/
 *{
