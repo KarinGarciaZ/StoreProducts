@@ -82,6 +82,7 @@ body
     background-color: #F4F4F9;
 
 }
+
 .container-formulario
 {
     max-width: 450px;
@@ -192,6 +193,56 @@ p#texto
 p#texto:hover
 {
     color: rgb(11, 126, 112);
+}
+
+.Cabeza{
+    background: black;
+    width: 940px;
+    height: 20px;
+    margin: auto;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16;
+    font-family: arial;
+}
+
+.cajaGrande{
+    background:rgb(177, 205, 235);
+    float: left;
+    width: 250px;
+    height: 350px;
+}
+
+.caja{
+    justify-content: center;
+    background: white;
+    float: left;
+    margin-top: 8%;
+    margin-left: 8%;
+    width: 225px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+}
+
+.contenedor{
+    background: rgb(177, 205, 235);
+    overflow: auto;
+    /*width: 84%;
+    overflow-y: auto;
+    margin-top: 4%;
+    margin-left: 14%;*/
+    margin: 4% 14% 14% 2%;
+    /*margin-top: 20px;*/
+    border: 1px solid black;
+    /*max-width: 450px;
+    height: auto;
+    background-color: #586F7C;
+    margin: 5% auto;
+    padding-bottom: 1rem;*/
 }
 /*************************************************CSS para la barra el menú de altas**************************/
 *{
