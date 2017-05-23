@@ -13,6 +13,54 @@
         <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
     </head>
     <body>
+        <nav id="laterial-productos">
+            <ul class="ul_Menu-productos">
+                <a  href="AltaUsuarios.php">
+                    <li class="li_Menu">
+                        <div class="barra"></div>
+                        <p class="menu">Crear usuario</p>
+                    </li>
+                </a>
+
+                <a  href="Categoria.php">
+                    <li class="li_Menu-producto">
+                        <div class="barra"></div>
+                        <p class="menu">Categorias</p>
+                    </li>
+                </a>
+
+                <a  href="Marca.php">
+                    <li class="li_Menu">
+                        <div class="barra"></div>
+                        <p class="menu">Marcas</p>
+                    </li>
+                </a>
+
+                <a href="AltaProducto.php">
+                    <li class="li_Menu">
+                        <div class="barra"></div>
+                        <p class="menu">Productos</p>
+                    </li>
+                </a>
+
+                <a href="LogIn.php" >
+                    <li class="li_Menu">
+                        <div class="barra"></div>
+                        <p class="menu">Cerrar sesión</p>
+                    </li>
+                </a>
+
+                <a href="../index.html">
+                    <li class="li_Menu">
+                        <div class="barra"></div>
+                        <p class="menu">Salir</p>
+                    </li>
+                </a>
+
+
+            </ul>
+        </nav>
+
         <div class="contenedor">
             <?php
                 while ($row = mysql_fetch_array($lector))
@@ -33,10 +81,8 @@
         </div>
         <footer class="pie">
             <div class="pie-contenedor">
-                <h2>CONTACTANOS EN NUESTRAS REDES SOCIALES</h2>
+                <h2 class="pie-texto">CONTACTANOS EN NUESTRAS REDES SOCIALES</h2>
             </div>
-
-
 
         </footer>
     </body>
