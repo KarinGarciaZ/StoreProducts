@@ -26,10 +26,10 @@
                     $lector = mysql_query($valores);
                     $row = mysql_fetch_array($lector);
                     $id = $row[0]+1;
-                    echo "<label class='lblInput'>ID Producto</label>";
+                    echo "<label class='lblInput'>Clave del Producto</label>";
                     echo "<input class='input' type='text' placeholder='$id' readonly=''>";
                  ?>
-                <label class="lblInput">Categoria</label>
+                 <label class="lblInput">Categoria</label>
                 <select class= "btn_submit" name="categoria">
                     <?php
                         $valores = "SELECT * from Category";

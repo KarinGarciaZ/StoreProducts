@@ -4,26 +4,34 @@
  ?>
 <html>
     <head>
+        <header>
+            <h1>Marcas de Produtos</h1>
+        </header>
         <meta charset="utf-8">
         <title>Marcas</title>
+        <link rel="stylesheet" type="text/css" href="../css/master.css"/>
+        <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
     </head>
     <body>
         <form class="" action="ProductosPorMarca.php" method="post">
-            <?php
-                    $valores = "SELECT * from brands";
-                    $lector = mysql_query($valores);
-                    while ($row = mysql_fetch_array($lector))
-                    {
-                        /*echo "<a href='ProductosPorCategoria.php' class='btn_submit' name= 'Cate' value = '".$row['id_Category']."'>";
-                        echo $row['description'];
-                        echo "</a><br><br>";*/
-                        echo "<input type='radio' name='marca' value='".$row['id_Brand']."'>".$row['name']."";
-                        echo "</a><br><br>";
-                    }
-             ?>
-             <div class="btnForm">
-                 <input class="btn_submit" type="submit" value="Consultar">
-             </div>
+            <div class="contenedor">
+                <?php
+                        $valores = "SELECT * from brands";
+                        $lector = mysql_query($valores);
+                        while ($row = mysql_fetch_array($lector))
+                        {
+                            echo "<div class='cajaMarcasCategorias'>";
+                                echo "<button name='marca' value='".$row['id_Brand']."'>";
+                                    echo "<b>".$row['name']."</b>  ";
+                                    echo "<br>";
+                                    echo "<hr>";
+                                    echo "<br>";
+                                    echo "<img src='../".$row['image']."' width='210' height='180'>";
+                                echo "</button>";
+                            echo "</div>";
+                        }
+                 ?>
+            </div>
          </form>
     </body>
 </html>

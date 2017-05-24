@@ -24,11 +24,15 @@
                     $lector = mysql_query($valores);
                     $row = mysql_fetch_array($lector);
                     $id = $row[0]+1;
-                    echo "<label class='lblInput'>ID Marca</label>";
+                    echo "<label class='lblInput'>Clave de la Marca</label>";
                     echo "<input class='input' type='text' placeholder='$id' readonly=''>";
                  ?>
                 <label class="lblInput">Nombre</label>
                 <input class="input" style="text-transform:uppercase" name="nom" type="nombre" placeholder="&#128213; Marca" required autofocus >
+                <div class="searchImage">
+                    <p id="texto">Add file</p>
+                    <input type="file" name = "buscarImagen" class="buscarImagen" value="file1"/ required autofocus>
+                </div>
                 <div class="btnForm">
                     <input class="btn_submit" type="submit" value="Registro de Marca">
                 </div>
