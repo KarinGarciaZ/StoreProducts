@@ -21,7 +21,7 @@
                 <?php
                     while ($row = mysql_fetch_array($lector))
                     {
-                        echo "<div class='cajaMarcasCategorias'>";
+                        echo "<div class=cajaMarcasCategorias>";
                             echo "<button name='categ' value='".$row['id_Category']."'>";
                                 echo "<b><h2>".$row['description']."</h2></b>  ";
                                 echo "<br>";

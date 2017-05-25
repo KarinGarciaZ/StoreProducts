@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    background-attachment: fixed;
 
 }
 
@@ -210,10 +211,11 @@ p#texto:hover
 }
 
 .cajaMarcasCategorias{
-    background:rgb(142, 149, 156);
+    background:rgba(141, 150, 158, 0.57);
     float: left;
     width: 250px;
     height: 250px;
+    border-style: none;
 }
 
 .cajaGrande{
@@ -221,6 +223,7 @@ p#texto:hover
     float: left;
     width: 250px;
     height: 350px;
+    border-style: none;
 }
 
 .caja{
@@ -234,8 +237,14 @@ p#texto:hover
     text-align: center;
     border: 1px solid #E2E2E2;
     border-radius: 10px;
+    border-style: none;
 }
 
+button
+{
+    border-radius: 30px;
+    border-style: none;
+}
 .contenedor{
     background: rgb(142, 149, 156);
     border-style: none;
@@ -348,10 +357,6 @@ div.barra
 {
     width: 220px;
 }
-
-
-
-
 
 #Titulo
 {
